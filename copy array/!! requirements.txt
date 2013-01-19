@@ -1,2 +1,0 @@
-Clear Array
-	https://github.com/nestharus/Galaxy-Code/tree/master/clear%20array

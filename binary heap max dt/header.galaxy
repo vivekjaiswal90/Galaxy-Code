@@ -1,69 +1,47 @@
-//------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
 //
-//  *************************************************************
-//  *                                                           *
-//  *               Defrag Sequence Heap (Max)                  *
-//  *                                                           *
-//  *                                           v2.0.0.0        *
-//  *                                           ~Nestharus      *
-//  *                                                           *
-//  *************************************************************
+//	Functions
 //
-//------------------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
 //
-//  Details
+//		HEAP
 //
-//      A binary heap implemented with data table. Useful for creating memory allocators.
+			int heapGetSize(string heapName);
 //
-//		Stores sequences (weight is size of sequence).
+//				get number of elements in the heap
 //
-//		Automatically keeps sequences defragmented.
+			int heapGetFirst(string heapName);
 //
-//------------------------------------------------------------------------------------------------------------------------------------------------------
+//				get first element in the heap (always biggest weight)
 //
-//  Functions
+			void heapInsert(int pointer, int weight, string heapName, int min, int max);
 //
-//                            HEAP
-//      ---------------------------------------------------------
-        int heapGetSize(string heapName);
+//				insert an element into the heap given weight
 //
-//			get number of elements in the heap
+//					min, max are the minimum and maximum pointer values
 //
-		int heapGetFirst(string heapName);
+			void heapRemove(int pointer, string heapName);
 //
-//			get first element in the heap (always biggest weight)
+//				remove any element from heap
 //
-		void heapInsert(int pointer, int weight, string heapName, int min, int max);
+//     	POINTER
 //
-//			insert an element into the heap given weight
+			int heapGetWeight(int pointer);
 //
-//				min, max are the minimum and maximum pointer values
+//				get element's weight
 //
-		void heapRemove(int pointer, string heapName);
+			void heapChangeWeight(int pointer, int newWeight, string heapName);
 //
-//			remove any element from heap
+//				change element's weight
 //
+//		DEBUG
 //
-//                            POINTER
-//      ---------------------------------------------------------
-		int heapGetWeight(int pointer);
+			int heapValidate(string heapName);
 //
-//			get element's weight
+//				validate heap
 //
-		void heapChangeWeight(int pointer, int newWeight, string heapName);
+//					run this when feeling like the system is buggy
+//					this will return # of errors found in heap
 //
-//			change element's weight
-//
-//                            DEBUG
-//      ---------------------------------------------------------
-		int heapValidate(string heapName);
-//
-//			validate heap
-//
-//				run this when feeling like the system is buggy
-//				this will return # of errors found in heap
-//
-//				if no errors are returned and strange behavior is occuring, the problem
-//				isn't in this resource
-//
-//------------------------------------------------------------------------------------------------------------------------------------------------------
+//					if no errors are returned and strange behavior is occuring, the problem
+//					isn't in this resource

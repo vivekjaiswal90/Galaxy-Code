@@ -1,2 +1,0 @@
-Binary Heap Max DT
-	https://github.com/nestharus/Galaxy-Code/tree/master/binary%20heap%20max%20dt
