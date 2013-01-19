@@ -1,0 +1,32 @@
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//  *************************************************************
+//  *                                                           *
+//  *                    Set Pointer Value                    	*
+//  *                                                           *
+//  *                                           v1.0.0.2        *
+//  *                                           ~Nestharus      *
+//  *                                                           *
+//  *************************************************************
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//  Requires
+//
+//      hiveworkshop.com/forums/galaxy-script-section-694/system-dynamic-memory-allocator-228790/
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//  Functions
+//
+		void setPointerValue(int pointer, int pointerValue);
+		void setPointerValueEx(int pointer, int pointerValue, int memoryType);
+		void setPointerValueBlockEx(int blockAddress, int blockAddressValue, int memoryType);
+//
+//			sets pointer value at pointer to pointer value at pointerValue
+//
+		void initializeSetPointer();
+//
+//			initializes the function
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------
