@@ -7,7 +7,7 @@ int delegate(int data) { return 0; }
 //  - memory address initialization
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------------
-    static int 		[MEMORY_TYPE_COUNT] memoryTypeStartAddress*2;
+    static int 		[MEMORY_TYPE_COUNT] memoryTypeStartAddress;
     static int 		[MEMORY_TYPE_COUNT] memoryTypeSize;
     static string 	[MEMORY_TYPE_COUNT] memoryTypeName;
 
